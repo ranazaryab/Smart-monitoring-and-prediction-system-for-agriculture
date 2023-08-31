@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Monitering_Fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/nav">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Monitoring"
+            android:textColor="#ffffff"
+            android:textSize="42dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="cursive"/>
+
+
+        //First layout start
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/nav">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/Moisture_ProgressBar"
+                        android:layout_width="140dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        app:cpb_background_progressbar_color="@color/white"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progress="20"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="#3f51b5"
+                        app:cpb_progressbar_width="10dp"
+                        app:cpb_round_border="false" />
+
+                    <TextView
+                        android:id="@+id/Moisture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="20%"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Moisture_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="cursive"
+                        android:text="Soil Moisture"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        //First layout end
+        //Second layout start
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_monitor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/nav">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/temperature_ProgressBar"
+                        android:layout_width="140dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        app:cpb_background_progressbar_color="@color/white"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progress="10"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="#3f51b5"
+                        app:cpb_progressbar_width="10dp"
+                        app:cpb_round_border="false" />
+
+
+                    <TextView
+                        android:id="@+id/temperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="10C"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/temperature_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="cursive"
+                        android:text="Temperature"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/nav">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/humidity_ProgressBar"
+                        android:layout_width="140dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        app:cpb_background_progressbar_color="@color/white"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progress="30"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="#3f51b5"
+                        app:cpb_progressbar_width="10dp"
+                        app:cpb_round_border="false" />
+
+                    <TextView
+                        android:id="@+id/humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="30%"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/humidity_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="cursive"
+                        android:layout_marginTop="200dp"
+                        android:text="Humidity"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/nav">
+
+<!--                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/Rain_ProgressBar"
+                        android:layout_width="140dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        app:cpb_background_progressbar_color="@color/white"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progress="35"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="#3f51b5"
+                        app:cpb_progressbar_width="10dp"
+                        app:cpb_round_border="false" />-->
+
+                    <TextView
+                        android:id="@+id/Rain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="35%"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Rain_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="cursive"
+                        android:text="Rain"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/nav">
+
+                    <!--<com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/Air_ProgressBar"
+                        android:layout_width="140dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        app:cpb_background_progressbar_color="@color/white"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progress="0"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="#3f51b5"
+                        app:cpb_progressbar_width="10dp"
+                        app:cpb_round_border="false" />-->
+
+                    <TextView
+                        android:id="@+id/Air"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Air_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="cursive"
+                        android:text="Air"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+        //Second layout End
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,82 @@
+Soil Moisture Sensor:
+void setup() {
+  pinMode(A0,INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  int moisture = analogRead(A0);
+  float moisture_percentage = ( 100 - ( (moisture/1023.00) * 100 ) );
+  Serial.print("Soil Moisture = ");
+  Serial.print(moisture_percentage);
+  Serial.println("%");
+   delay(100); 
+}
+
+DHT11 Temperature and Moisture Sensor:
+
+#include "DHT.h"
+
+#define DHTPIN D1
+
+#define DHTTYPE DHT11
+
+DHT dht(DHTPIN,DHTTYPE);
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println("DHT11: Temperature And Humidity Sensor");
+
+  dht.begin();
+
+}
+
+void loop() {
+  //dht.read11(DHTPIN);
+  Serial.print("Tempreature =");
+  Serial.println(dht.readTemperature());
+  Serial.print("Humidity =");
+  Serial.println(dht.readHumidity());
+  delay(1000);
+}
+
+MQ135 sensor:
+
+void setup() {
+  pinMode(A0,INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  int pollution = analogRead(A0);
+  float pollution_percentage = ((pollution/1023.00) * 100 ) );
+  Serial.print("Pollution = ");
+  Serial.print(pollution_percentage);
+  Serial.println("%");
+   delay(1000); 
+}
+
+Rain Sensor:
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(A0,INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+int value = analogRead(A0);
+//Serial.println(value);
+if(value < 900)
+{
+  Serial.println("It is Raining!");
+}
+else{
+  Serial.println("Not Raining!");
+}
+delay(1000);
+}

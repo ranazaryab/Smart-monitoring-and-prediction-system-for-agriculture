@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "680416690088",
+    "firebase_url": "https://smart-monitoring-and-pre-f4c80-default-rtdb.firebaseio.com",
+    "project_id": "smart-monitoring-and-pre-f4c80",
+    "storage_bucket": "smart-monitoring-and-pre-f4c80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680416690088:android:b467ceb0553c83cf68279d",
+        "android_client_info": {
+          "package_name": "com.app.SMPA_APP"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680416690088-p8ojhd7vcioggte61pk8hvfku1nu36ej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.SMPA_APP",
+            "certificate_hash": "2f4d6d31a69376ce25e8562ccfba425dbe53abf5"
+          }
+        },
+        {
+          "client_id": "680416690088-duvr8vpc8ooq941pk4ipuh04mlknvkdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdx8AVas2IOQq0onbhH2t6Admc_WuZttI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680416690088-duvr8vpc8ooq941pk4ipuh04mlknvkdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680416690088:android:a201031312cfbc7268279d",
+        "android_client_info": {
+          "package_name": "com.example.smartmoniteringandpredictionofagriculturesystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680416690088-duvr8vpc8ooq941pk4ipuh04mlknvkdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdx8AVas2IOQq0onbhH2t6Admc_WuZttI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680416690088-duvr8vpc8ooq941pk4ipuh04mlknvkdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
